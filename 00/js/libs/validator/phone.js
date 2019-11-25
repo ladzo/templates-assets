@@ -59,6 +59,7 @@
             shoptet.validator.ajaxPending = 0;
         };
 
+        shoptet.validatorPhone.validateUrl = '/action/ShoptetValidatePhone/index/';
         var url = shoptet.config.validatePhoneUrl;
         url += '?number=' + encodeURIComponent(validatedValue)
             + '&phoneCode=' + encodeURIComponent(phoneInfo.phoneCode)
