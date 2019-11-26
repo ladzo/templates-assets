@@ -60,7 +60,8 @@
         };
 
         shoptet.validatorPhone.validateUrl = '/action/ShoptetValidatePhone/index/';
-        var url = shoptet.config.validatePhoneUrl;
+        //var url = shoptet.config.validatePhoneUrl;
+        var url = shoptet.validatorPhone.validateUrl;
         url += '?number=' + encodeURIComponent(validatedValue)
             + '&phoneCode=' + encodeURIComponent(phoneInfo.phoneCode)
             + '&countryCode=' + encodeURIComponent(phoneInfo.countryCode);
